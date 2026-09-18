@@ -4,89 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/cv.css">
 </head>
 <body>
 
+    <div class="fog-container">
+        <div class="fog-layer fog-1"></div>
+        <div class="fog-layer fog-2"></div>
+    </div>
+
+    <!-- BANDEAU NOIR DU HAUT (UNIQUEMENT NOM + INFOS) -->
     <header class="border1">
-        <h1>LESUISSE Myke</h1>
-        <h2>Poste recherché : tout</h2>
-        <p>Je cherche un stage dans l'informatique, pas de préférence en terme de codage, cybersécurité...</p>
+        <div class="header-left">
+            <h1>LESUISSE Myke</h1>
+            <h2>Poste recherché : tout</h2>
+        </div>
         
-        <address>
-            876 Rue Montgolfier, Liévin
-        </address>
-        
-        <p>
-            <a href="mailto:myke.lesuisse62@gmail.com">myke.lesuisse62@gmail.com</a>
-        </p>
+        <div class="header-right">
+            <p>🎯 JE CHERCHE UN STAGE DANS L'INFORMATIQUE : CODAGE, CYBERSÉCURITÉ...</p>
+            <address>📍 876 RUE MONTGOLFIER, LIÉVIN</address>
+            <p>📧 <a href="mailto:myke.lesuisse62@gmail.com">MYKE.LESUISSE62@GMAIL.COM</a></p>
+        </div>
+    </header> <!-- HEAER FERMÉ ICI -->
 
-        <nav class="border1">
-            <ol>
-                <li><a href="#exp">Expériences</a></li>
-                <li><a href="#formation">Formation</a></li>
-                <li><a href="#interets">Intérêts</a></li>
-                <li><a href="#competences">Compétences</a></li>
-            </ol>
-        </nav>
-    </header>
+    <!-- TUILES DE NAVIGATION (MAINTENANT EXTÉRIEURES AU HEADER, SUR LE FOND CLAIR) -->
+    <nav class="border1">
+        <ol>
+            <li><a href="#exp" class="tile-exp"><span></span></a></li>
+            <li><a href="#formation" class="tile-formation"><span></span></a></li>
+            <li><a href="#interets" class="tile-interets"><span></span></a></li>
+            <li><a href="#competences" class="tile-competences"><span></span></a></li>
+        </ol>
+    </nav>
 
+    <!-- CONTENU QUI S'AFFICHE SOUS LES TUILES -->
     <section class="border1">
         <h2>Mon parcours</h2>
 
-        <article id="exp" class="border1">
+        <article id="exp" class="border1 page-section default-page">
             <h3>Expériences Professionnelles</h3>
             <ul>
-                <li>Ouvrier de type manutentionnaire, CPN Divion</li>
-                <li>Plonge, Flunch Noyelles Godault</li>
+                <li>⚙️ Ouvrier de type manutentionnaire, CPN Divion</li>
+                <li>🍽️ Plonge, Flunch Noyelles Godault</li>
             </ul>
         </article>
 
-        <article id="formation" class="border1">
+        <article id="formation" class="border1 page-section">
             <h3>Formation</h3>
             <ul>
-                <li><span class="periode">2021 - 2022 :</span> Brevet des collèges série Générale mention bien, Collège Pierre et Marie Curie Liévin</li>
-                <li><span class="periode">2025 - 2026 :</span> Baccalauréat STI2D spécialité SIN : Lycée Henri Darras Liévin</li>
-                <li><span class="periode">En cours :</span> BTS CIEL Lycée André Malraux Béthune</li>
-                <li>Permis B (avec la toum prime)</li>
+                <li><span class="periode">2021 - 2022 :</span> 🎓 Brevet des collèges série Générale mention bien, Collège Pierre et Marie Curie Liévin</li>
+                <li><span class="periode">2025 - 2026 :</span> 💻 Baccalauréat STI2D spécialité SIN : Lycée Henri Darras Liévin</li>
+                <li><span class="periode">En cours :</span> 🖥️ BTS CIEL Lycée André Malraux Béthune</li>
+                <li>🚗 Permis B (avec la toum prime)</li>
             </ul>
         </article>
 
-        <article id="interets" class="border1">
+        <article id="interets" class="border1 page-section">
             <h3>Intérêts / Loisirs</h3>
             <ul>
-                <li>FIFA</li>
-                <li>Les jeux-vidéos</li>
-                <li>La musique</li>
-                <li>Les boîtes de nuit</li>
+                <li>⚽ FIFA</li>
+                <li>🎮 Les jeux-vidéos</li>
+                <li>🎧 La musique</li>
+                <li>🌙 Les boîtes de nuit</li>
             </ul>
         </article>
     </section>
 
-    <aside id="competences">
+    <aside id="competences" class="page-section">
         <h3>Compétences</h3>
         <dl>
             <dt><strong>Compétence 1 :</strong></dt>
-            <dd>Relations avec les gens</dd>
+            <dd>🤝 Relations avec les gens</dd>
             
             <dt><strong>Compétence 2 :</strong></dt>
-            <dd>Serviable</dd>
+            <dd>🖐️ Serviable</dd>
             
             <dt><strong>Compétence 3 :</strong></dt>
-            <dd>Souriant</dd>
+            <dd>😊 Souriant</dd>
             
             <dt><strong>Compétence 4 :</strong></dt>
-            <dd>Rapidité de compréhension</dd>
+            <dd>⚡ Rapidité de compréhension</dd>
         </dl>
     </aside>
 
+    <!-- FOOTER EN BAS À DROITE -->
     <footer class="border1">
-        <p>
-            <a href="https://www.linkedin.com" target="_blank">
+        <div class="hud-controls">
+            <a href="https://www.linkedin.com" target="_blank" class="hud-btn">
+                <span class="key-cap">C</span>
                 <img src="images/Linkedin.png" alt="Profil LinkedIn">
             </a>
-        </p>
-        <p>Created by LESUISSE Myke @slyyzoo sur Twitch</p>
+            <p class="hud-btn">
+                <span class="key-cap">ESC</span>
+                Created by LESUISSE Myke @slyyzoo sur Twitch
+            </p>
+        </div>
     </footer>
 
 </body>
