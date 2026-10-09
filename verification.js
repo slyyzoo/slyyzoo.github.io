@@ -1,6 +1,3 @@
-/* TP1 - VALIDATION JS FORMULAIRE DE CONTACT */
-
-// --- 3.a : FONCTIONS DE VALIDATION ---
 
 // Vérification du Nom (2 à 30 caractères)
 function validateNom(nom) {
