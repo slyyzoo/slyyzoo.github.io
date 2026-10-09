@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Lesuisse Myke</title>
+    <link rel="stylesheet" href="css/cv.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Bandeau haut (Header) -->
+    <header class="border1">
+        <div class="header-left">
+            <h1>Lesuisse Myke</h1>
+            <h2>Contact</h2>
+        </div>
+        <div class="header-right">
+            <a href="cv.html">← RETOUR AU CV</a>
+        </div>
+    </header>
+
+
+    <!-- Formulaire de contact avec contrôles JS -->
+    <main class="contact-container">
+        <form id="contact-form" action="confirmation.html" method="GET" novalidate>
+            
+            <fieldset>
+                <legend>VOS COORDONNÉES</legend>
+                <div class="form-group">
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" placeholder="Ex: Nom (2 à 30 caractères)">
+                    <div class="error" id="nom-error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" id="prenom" name="prenom" placeholder="Ex: Prénom (2 à 30 caractères)">
+                    <div class="error" id="prenom-error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" placeholder="Ex: exemple@domaine.com">
+                    <div class="error" id="email-error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="telephone">Téléphone :</label>
+                    <input type="tel" id="telephone" name="telephone" placeholder="06 00 00 00 00">
+                    <div class="error" id="tel-error"></div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>VOTRE MESSAGE</legend>
+                <div class="form-group">
+                    <label for="sujet">Sujet :</label>
+                    <select id="sujet" name="sujet">
+                        <option value="">-- Sélectionnez un sujet --</option>
+                        <option value="recrutement">Recrutement</option>
+                        <option value="information">Demande d'information</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                    <div class="error" id="sujet-error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Écrivez votre message ici (10 à 500 caractères)..."></textarea>
+                    <div class="error" id="message-error"></div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>VALIDATION</legend>
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="rgpd" name="rgpd">
+                    <label for="rgpd">J'accepte que mes données soient utilisées pour ce contact</label>
+                </div>
+                <div class="error" id="rgpd-error"></div>
+            </fieldset>
+
+            <div class="btn-group">
+                <button type="submit" class="btn-submit">ENVOYER</button>
+                <button type="reset" class="btn-reset">ANNULER</button>
+            </div>
+
+        </form>
+    </main>
+
+    <!-- Pied de page -->
+    <footer class="border1">
+        <div class="hud-controls">
+            <a href="index.html" class="hud-btn">
+                <span class="key-cap">ESC</span>
+                <span>Retour</span>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Brume d'arrière-plan GOT -->
+    <div class="fog-container">
+        <div class="fog-layer fog-1"></div>
+        <div class="fog-layer fog-2"></div>
+    </div>
+
+    <!-- Script de validation JavaScript -->
+    <script src="verification.js"></script>
+
+</body>
+</html>
